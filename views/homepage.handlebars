@@ -1,4 +1,15 @@
 <!-- Loop over each object in the projects array -->
-<div>
-  Hello World
-</div>
+{{#each posts as |post|}}
+  <div class='row mb-4 project'>
+    <p>
+      {{post.message}}
+      -{{post.user.name}}
+      -{{post.category.name}}
+    </p>
+    {{#each post.replies as |reply|}}
+      <div>
+        {{reply.message}}
+      </div>
+    {{/each}}
+  </div>
+{{/each}}
