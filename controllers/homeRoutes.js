@@ -87,4 +87,14 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
+// Pass serialized posts data
+
+router.get('/posts', withAuth, async (req, res) => {
+  try {
+    res.render('posts');
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 module.exports = router;
