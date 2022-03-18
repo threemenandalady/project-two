@@ -1,17 +1,36 @@
 [
   {
-    "name": "Sal",
-    "email": "sal@hotmail.com",
-    "password": "password12345"
+    "id": 1,
+    "name": "Scott",
+    "email": "scott@scottstots.com",
+    "password": "password123"
   },
+
   {
-    "name": "Lernantino",
-    "email": "lernantino@gmail.com",
-    "password": "password12345"
+    "id": 2,
+    "name": "SimpsonFam",
+    "email": "simpsons@scottstots.com",
+    "password": "marge123"
   },
+
   {
-    "name": "Amiko",
-    "email": "amiko2k20@aol.com",
-    "password": "password12345"
+    "id": 3,
+    "name": "SanchezFam",
+    "email": "sanchezs@scottstots.com",
+    "password": "beth1234"
+  },
+
+  {
+    "id": 4,
+    "name": "HillFam",
+    "email": "hills@scottstots.com",
+    "password": "peggy123"
+  },
+
+  {
+    "id": 5,
+    "name": "BelcherFam",
+    "email": "belchers@scottstots.com",
+    "password": "linda123"
   }
 ]
