@@ -6,6 +6,7 @@
       -{{post.user.name}}
       -{{post.category.name}}
     </p>
+    <a href='reply/{{post.id}}'>Reply </a>
     {{#each post.replies as |reply|}}
       <div>
         {{reply.message}}
