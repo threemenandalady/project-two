@@ -35,21 +35,14 @@ router.get('/', async (req, res) => {
   }
 });
 
-router.get('/project/:id', async (req, res) => {
+router.get('/reply/:id', async (req, res) => {
   try {
-    const projectData = await Project.findByPk(req.params.id, {
-      include: [
-        {
-          model: User,
-          attributes: ['name'],
-        },
-      ],
-    });
+    const postData = await Posts.findByPk(req.params.id, {});
 
-    const project = projectData.get({ plain: true });
-
-    res.render('project', {
-      ...project,
+    const post = postData.get({ plain: true });
+    console.log(post);
+    res.render('reply', {
+      post,
       logged_in: req.session.logged_in,
     });
   } catch (err) {
@@ -80,7 +73,7 @@ router.get('/profile', withAuth, async (req, res) => {
 router.get('/login', (req, res) => {
   // If the user is already logged in, redirect the request to another route
   if (req.session.logged_in) {
-    res.redirect('/profile');
+    res.redirect('/');
     return;
   }
 
@@ -91,7 +84,9 @@ router.get('/login', (req, res) => {
 
 router.get('/posts', withAuth, async (req, res) => {
   try {
-    res.render('posts');
+    res.render('posts', {
+      logged_in: req.session.logged_in,
+    });
   } catch (err) {
     res.status(500).json(err);
   }

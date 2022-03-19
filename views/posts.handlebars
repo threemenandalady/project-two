@@ -1,21 +1,28 @@
 <div class='row'>
   <div class='col-md-6'>
     <h2>Messages</h2>
-
+    <form>
+      Categories:
+      <select id='dropdown-input'>
+        <option value='1' selected='selected'>Homework Help</option>
+        <option value='2' selected='selected'>Events</option>
+        <option value='3' selected='selected'>Miscellaneous</option>
+      </select>
+    </form>
     <form class='form posts-message'>
       <div class='form-group'>
-        <label for='name-post'>Name:</label>
-        <input class='form-input' type='text' id='email-login' />
-      </div>
-      <div class='form-group'>
         <label for='message-post'>Message:</label>
-        <input class='message-input' type='password' id='password-login' />
+        <input class='message-input' type='text' id='message-input' />
       </div>
       <div class='form-group'>
-        <button class='btn btn-primary' type='submit'>Submit</button>
+        <button
+          class='btn btn-primary'
+          type='submit'
+          id='submitBtn'
+        >Submit</button>
       </div>
     </form>
   </div>
 </div>
 
-<script src='./../public/js/posts.js'></script>
+<script src='./js/posts.js'></script>
