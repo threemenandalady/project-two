@@ -1,21 +1,17 @@
 [
   {
-    "id": 1,
     "name": "Homework Help"
   },
 
   {
-    "id": 2,
     "name": "Events"
   },
 
   {
-    "id": 3,
     "name": "Dress Code"
   },
 
   {
-    "id": 4,
     "name": "Lunch"
   }
 ]

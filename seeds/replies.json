@@ -1,8 +1,10 @@
 [
   {
-    "id": 1,
     "message": "Hello Teacher...",
-    "post_id": 2,
-    "user_id": 1
+    "post_id": 1
+  },
+  {
+    "message": "Hello Student...",
+    "post_id": 2
   }
 ]
