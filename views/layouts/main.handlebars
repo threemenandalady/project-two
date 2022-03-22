@@ -9,7 +9,7 @@
   </head>
 
   <body>
-    <img src='/images/scotts_tots.png' alt='' />
+    {{! <img src='/images/scotts_tots.png' alt='logo' /> }}
     <div class='flex-column justify-space-around'>
       <header class='display-flex justify-space-between align-center p-2'>
         <h1>Scott's Tots</h1>
@@ -33,10 +33,11 @@
       <script src='/js/logout.js'></script>
     {{/if}}
 
-    {{#each posts}}
-      <a href='/posts'>Messages</a>
-    {{/each}}
+    <a href='/posts'>Messages</a>
+
+    <a href='/posts/1'>Homework Help</a>
+    <a href='/posts/2'>Events</a>
+    <a href='/posts/3'>Dress Code</a>
 
   </body>
-
 </html>

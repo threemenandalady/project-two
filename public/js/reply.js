@@ -1,18 +1,23 @@
 const newFormHandler = async function (event) {
   event.preventDefault();
+  // const title = document.querySelector('input[name="post-title"]').value;
   const message = document.querySelector('#message-input').value;
-  const categories = document.querySelector('#dropdown-input').value;
+  const post_id = document.querySelector('#post_id').value;
 
-  await fetch(`/api/posts`, {
+  const response = await fetch(`/api/replies`, {
     method: 'POST',
     body: JSON.stringify({
       message,
-      categories,
+      post_id,
     }),
     headers: { 'Content-Type': 'application/json' },
   });
 
-  // document.location.replace('/');
+  if (response.ok) {
+    document.location.replace('/');
+  } else {
+    alert('Failed to create project');
+  }
 };
 
 document
