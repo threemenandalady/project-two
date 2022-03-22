@@ -88,6 +88,21 @@ router.get('/reply/:id', async (req, res) => {
   }
 });
 
+router.get('/posts/reply/:id', async (req, res) => {
+  try {
+    const postData = await Posts.findByPk(req.params.id, {});
+
+    const post = postData.get({ plain: true });
+    console.log(post);
+    res.render('reply', {
+      post,
+      logged_in: req.session.logged_in,
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 // Use withAuth middleware to prevent access to route
 router.get('/profile', withAuth, async (req, res) => {
   try {
