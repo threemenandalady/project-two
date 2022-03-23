@@ -27,3 +27,10 @@ header, .project:not(:last-child) {
   margin-left: -5px;
 }
 
+.bgc-color {
+ background-color: turquoise;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
+}
