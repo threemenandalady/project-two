@@ -1,16 +1,26 @@
 <!-- Loop over each object in the projects array -->
-{{#each posts as |post|}}
-  <div class='row mb-4 project'>
-    <p>
-      {{post.message}}
-      -{{post.user.name}}
-      -{{post.category.name}}
-    </p>
-    <a href='reply/{{post.id}}'>Reply </a>
-    {{#each post.replies as |reply|}}
-      <div>
-        {{reply.message}}
+<div class='posts-list'>
+  {{#each posts as |post|}}
+    <div class='row mb-4'>
+      <p>
+        {{post.message}}
+        -{{post.user.name}}
+        -{{post.category.name}}
+      </p>
+      <a href='reply/{{post.id}}'>Reply </a>
+      <div class='col-md-4'>
+        <button
+          class='btn btn-sm btn-danger'
+          type='click'
+          data-id='{{post.id}}'
+        >DELETE</button>
       </div>
-    {{/each}}
-  </div>
-{{/each}}
+      {{#each post.replies as |reply|}}
+        <div>
+          {{reply.message}}
+        </div>
+      {{/each}}
+    </div>
+  {{/each}}
+</div>
+<script src='./js/homepage.js'></script>
