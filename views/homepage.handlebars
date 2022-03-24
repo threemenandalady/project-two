@@ -1,4 +1,7 @@
 <!-- Loop over each object in the projects array -->
+
+<div class='posts-list'>
+
 {{#each posts as |post|}}
   <div class='card-border mw mt-5 ml-10-lg ml-04 mb-4 project'>
     <div class="flex p-05 justify-space-between">
@@ -21,7 +24,13 @@
       <ul class="invisible">
       </ul>
     </div>
-    
+    <div class='col-md-4'>
+        <button
+          class='btn btn-sm btn-danger'
+          type='click'
+          data-id='{{post.id}}'
+        >DELETE</button>
+      </div>
     <div class="m-2 bt"></div>
     {{#each post.replies as |reply|}}
       <div class="reply-border m-1 pl p-1">
@@ -31,3 +40,5 @@
     {{/each}}                
   </div>
 {{/each}}
+</div>
+<script src='./js/homepage.js'></script>
