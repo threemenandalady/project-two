@@ -1,26 +1,45 @@
 <!-- Loop over each object in the projects array -->
+
 <div class='posts-list'>
-  {{#each posts as |post|}}
-    <div class='row mb-4'>
-      <p>
-        {{post.message}}
-        -{{post.user.name}}
-        -{{post.category.name}}
-      </p>
-      <a href='reply/{{post.id}}'>Reply </a>
-      <div class='col-md-4'>
+
+{{#each posts as |post|}}
+  <div class='card-border mw mt-5 ml-10-lg ml-04 mb-4 project'>
+    <div class="flex p-05 justify-space-between">
+    <p class="fs-1">
+      {{post.user.name}}
+      
+    </p>
+    <p class="fs-075 text-gray-600">
+      {{post.category.name}}
+    </p>
+    </div>
+    <p class="p-3 fs-15">
+      {{post.message}}
+    </p>
+
+    <div class="flex pl-1">
+      <a class="td-n ml-1 mb-2" href='reply/{{post.id}}'><i class="far fa-comment"></i>Reply </a>
+    
+      <div class="pl-1">...</div>
+      <ul class="invisible">
+        <a href="post/delete/{{post.id}}">delete</a>
+      </ul>
+    </div>
+    <div class='col-md-4'>
         <button
           class='btn btn-sm btn-danger'
           type='click'
           data-id='{{post.id}}'
         >DELETE</button>
       </div>
-      {{#each post.replies as |reply|}}
-        <div>
-          {{reply.message}}
-        </div>
-      {{/each}}
-    </div>
-  {{/each}}
+    <div class="m-2 bt"></div>
+    {{#each post.replies as |reply|}}
+      <div class="reply-border m-1 pl p-1">
+        {{reply.user.name}}
+        {{reply.message}}
+      </div>
+    {{/each}}                
+  </div>
+{{/each}}
 </div>
 <script src='./js/homepage.js'></script>
