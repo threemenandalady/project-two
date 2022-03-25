@@ -12,25 +12,27 @@
 
 ## Description
 
-Scott's Tots is a full stack web application designed for a fourth grade class's parents to interact with their teacher. 
+### Scott’s Tots is a full stack web application.  It is an interactive message board created to allow parents of a fourth grade class interact with their child’s teacher and each other.
+
 
 
 ## Usage
 ```
-GIVEN a class room messaging board
-WHEN I visit the site for the first time
-THEN I am presented with the homepage, which includes the navigation links, and the option to login or sign up.
-THEN user logs in or signs up
-WHEN logged in, click in navigation create post
-THEN user will be sent to the post message page
-THEN user will choose a category they wish to filter the message, once message is complete user submits.
-THEN user is redirected back to the homepage where the message has been posted.
-WHEN user wants to reply, the user can click `Reply to Post` button.
-THEN user is redirected to reply page where reply can be written, once reply is written user will be redirected to the homepage where reply is posted under message.
-WHEN user wants to delete message user can click delete button.
+AS a parent:
+I WANT to stay up to date on my fourth grader’s class 
+I WANT to login to a site that will allow me to interact with other parents in the class and the teacher 
+I WANT to be able to post messages and reply to other messages and assign a category to my messages 
+THEN the categories will be listed in a sidebar 
+WHEN I click a category to messages will be filtered to only show messages related to that category
 
 ```
+
+
 ## Screenshots
+
+
+
+
 
 
 
@@ -41,10 +43,12 @@ WHEN user wants to delete message user can click delete button.
 - Brett Gould
 - Jose Guzman
 
+
 ## Contributors
 - Scott Brunswig
 - Brandon Gorson
 - Valerie Michalecki
+
 
 
 ## Links
@@ -54,6 +58,9 @@ WHEN user wants to delete message user can click delete button.
 
 ### Here is the deployed page: 
 - [Page](https://project-two-threeandalady.herokuapp.com/)
+
+
+
 
 ## Questions
 
