@@ -6,6 +6,10 @@ header, .project:not(:last-child) {
   border-bottom: 1px solid #ccc;
 }
 
+.bgc-w {
+  background-color: white;
+}
+
 .headerTitle {
   font-size: xx-large;
   font-weight: 600;
@@ -149,6 +153,10 @@ header, .project:not(:last-child) {
   font-size: 1.5rem;
 }
 
+.fs-3 {
+  font-size: 3rem;
+}
+
 .fs-075 {
   font-size: .75rem;
 }
@@ -163,6 +171,10 @@ header, .project:not(:last-child) {
 
 .h-100vh {
   height: 100vh;
+}
+
+.m-0 {
+  margin: 0;
 }
 
 .mw {
@@ -191,6 +203,93 @@ header, .project:not(:last-child) {
 
 .pt-2 {
   padding-top: 2rem;
+}
+
+.pt-3 {
+  padding-top: 3rem;
+}
+
+.select {
+  width: 10rem;
+  padding: .5rem;
+}
+
+.jc-c {
+  justify-content: center;
+}
+
+.w-8 {
+  width: 8rem;
+}
+
+.w-40 {
+  width: 40rem;
+}
+
+.va-t {
+  vertical-align: top;
+}
+
+.messageBox {
+  border: black solid 0.02rem;
+    width: 25rem;
+    height: 5rem;
+}
+
+.mt-02 {
+  margin-top: 2rem;
+}
+
+.bg-img {
+  background-image: url("./../images/david_blaine_elementary.png");
+  height: 100%;
+  margin: 0;
+}
+
+.postCreate {
+  border-top: black solid 0.01rem;
+}
+
+.loginCard {
+  background-color: white;
+    border: lightgrey solid 0.01rem;
+    border-radius: 2rem;
+    padding: 2rem;
+    margin-left: auto;
+    margin-right: 4rem;
+}
+
+.loginBtn {
+  width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.form-inp {
+  width: 100%;
+  color: #1a1a1a;
+  background-color: #ffffff;
+  margin: 0.625rem 0;
+  font-size: 1.2rem;
+  border: 1px solid #484848;
+  border-radius: 0.3rem;
+}
+
+.form-gr {
+  display: block;
+  width: 100%;
+}
+
+.form-gro {
+  width: 100%;
+    margin: 0.625rem 0;
+}
+
+.postCard {
+  border: rgba(173, 216, 230, 0) solid 0.01rem;
+  border-radius: 1rem;
+  box-shadow: rgb(106, 108, 109) 0.5rem 0.5rem 0.5rem 0.05rem;
+  padding: 1rem;
 }
 
 @media (min-width: 1000px) {

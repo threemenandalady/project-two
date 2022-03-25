@@ -1,31 +1,33 @@
-<div class='row'>
-  <div class='col-md-6'>
-    <h2>Messages</h2>
-    <form>
-      Categories:
-      <select id='dropdown-input'>
-        <option value='1' selected='selected'>Homework Help</option>
-        <option value='2' selected='selected'>Events</option>
-        <option value='3' selected='selected'>Dress Code</option>
-        <option value='4' selected='selected'>Lunch</option>
-        <option value='5' selected='selected'>After School Activities</option>
-        <option value='6' selected='selected'>PTA</option>
-        <option value='7' selected='selected'>Random</option>
-      </select>
-    </form>
-    <form class='form posts-message'>
-      <div class='form-group'>
-        <label for='message-post'>Message:</label>
-        <input class='message-input' type='text' id='message-input' />
-      </div>
-      <div class='form-group'>
-        <button
-          class='btn btn-primary'
-          type='submit'
-          id='submitBtn'
-        >Submit</button>
-      </div>
-    </form>
+<div class='row w-full jc-c pt-3'>
+  <div class='col-md-6 bgc-w postCard'>
+    <h2 class="fs-3">Create a Post</h2>
+    <div class="p-3 postCreate">
+      <form>
+        Categories: 
+        <select class="select" id='dropdown-input'>
+          <option value='1' selected='selected'>Homework Help   </option>
+          <option value='2' selected='selected'>Events   </option>
+          <option value='3' selected='selected'>Dress Code  </option>
+          <option value='4' selected="selected">Lunch</option>
+          <option value='5' selected="selected">After School Activities</option>
+          <option value="6" selected="selected">PTA</option>
+          <option value="7" selected="selected">Random</option>
+        </select>
+      </form>
+      <form class='form posts-message'>
+        <div class='form-group'>
+          <label for='message-post' class="va-t m-0">Message:</label>
+          <input class='message-input messageBox' type='text' id='message-input' />
+        </div>
+        <div class='form-gro flex justify-flex-end'>
+          <button
+            class='btn btn-primary fr'
+            type='submit'
+            id='submitBtn'
+          >Submit</button>
+        </div>
+      </form>
+    </div>
   </div>
 </div>
 
