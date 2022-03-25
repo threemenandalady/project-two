@@ -3,10 +3,17 @@
 <div class='posts-list'>
 
   {{#each posts as |post|}}
-    <div class='card-border m-2 '>
-      <div class="flex p-05 justify-space-between cardHeader cardHeaderAnimation">
-        <div class="flex">
-          <img class="imgBord" style="width: 20px;" src="/images/profile icon.png" alt="">
+    <div class='card-border m-2'>
+      <div
+        class='flex p-05 justify-space-between cardHeader cardHeaderAnimation'
+      >
+        <div class='flex'>
+          <img
+            class='imgBord'
+            style='width: 20px;'
+            src='/images/profile icon.png'
+            alt=''
+          />
           <p class='fs-1 ml-1'>
             {{post.user.name}}
 
@@ -16,19 +23,24 @@
           <a href='/posts/{{post.categories_id}}'>{{post.category.name}}</a>
         </p>
       </div>
-      <p class="p-3 fs-15 postMessage">
+      <p class='p-3 fs-15 postMessage'>
         {{post.message}}
       </p>
 
-      <div class="flex justify-flex-end pl-1">
-        <a class="repBtn repBtntag" href='reply/{{post.id}}'><i></i>Reply to post</a>
+      <div class='flex justify-flex-end pl-1'>
+        <a class='repBtn repBtntag' href='reply/{{post.id}}'><i></i>Reply to
+          post</a>
 
-        <button class='delBtn ml-2'type='click'data-id='{{post.id}}'>Delete</button>
+        <button
+          class='delBtn ml-2'
+          type='click'
+          data-id='{{post.id}}'
+        >Delete</button>
       </div>
 
       <div class='m-2 bt'></div>
       {{#each post.replies as |reply|}}
-        <div class="reply-border m-1 pl p-1 repTextBox">
+        <div class='reply-border m-1 pl p-1 repTextBox'>
           {{reply.user.name}}
           {{reply.message}}
         </div>

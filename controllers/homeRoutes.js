@@ -25,8 +25,8 @@ router.get('/', async (req, res) => {
         },
       ],
       order: [
-        [Replies, 'id', 'desc'],
         ['id', 'desc'],
+        [Replies, 'id', 'desc'],
       ],
     });
 
