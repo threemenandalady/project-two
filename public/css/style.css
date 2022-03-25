@@ -210,8 +210,8 @@ header, .project:not(:last-child) {
 }
 
 .select {
-  width: 10rem;
-  padding: .5rem;
+  width: 12rem;
+  padding: .2rem;
 }
 
 .jc-c {
