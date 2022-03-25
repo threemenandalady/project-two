@@ -9,12 +9,12 @@
     <link href="/tailwinds/output.css" rel="stylesheet">
   </head>
 
-  <body>
+  <body class="flex flex-col h-100vh">
     
       <header class='display-flex justify-space-between align-center p-2 bgc-color'>
           {{!-- <img style="" src='/images/scotts_tots.png' alt='logo' /> --}}
 
-        <h1 class="font-medium">Scott's Tots</h1>
+        <h1 class="headerTitle">Scott's Tots</h1>
 
       <div> 
           {{#if logged_in}}
@@ -32,35 +32,33 @@
       </header>
                 {{#if logged_in}}
 
-  <div class="lg:flex">                
-                
-                  <div class="navbar-collapse collapse grow items-center" id="navbarSupportedContentY">
-                    <ul class="">
+    <div class="flex fxg-1 flex-stk-md">                
+
+                  <div class="navbar-collapse collapse items-center" id="navbarSupportedContentY">
+                    <ul class="p-2">
                       <li class="nav-item">
                         <a class="nav-link block pr-2 lg:px-2 py-2 text-gray-600 hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out whitespace-nowrap" href="/posts/1" data-mdb-ripple="true" data-mdb-ripple-color="light">
-                          Homework Help
+                        📝  Homework Help
                         </a>
                       </li>
 
                       <li class="nav-item">
                         <a class="nav-link block pr-2 lg:px-2 py-2 text-gray-600 hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out whitespace-nowrap" href='/posts/2' data-mdb-ripple="true" data-mdb-ripple-color="light">
-                          Events
+                        🎊  Events
                         </a>
                       </li>
 
                       <li class="nav-item">
                         <a class="nav-link block pr-2 lg:px-2 py-2 text-gray-600 hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out whitespace-nowrap" href='/posts/3' data-mdb-ripple="true" data-mdb-ripple-color="light">
-                          Dress Code
+                        👔  Dress Code
                         </a>
                       </li>
                     </ul>
                   </div>
+</div>
                 {{/if}}
-
                 
-              
-
-      <main class='w-full'>
+      <main class='postBgc'>
         <!-- Render the sub layout -->
         {{{body}}}
       </main>
