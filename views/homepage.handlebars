@@ -31,10 +31,10 @@
           data-id='{{post.id}}'
         >DELETE</button>
       </div>
-    <div class="m-2 bt"></div>
+    <div class="m-2 bt ">Replies</div>
     {{#each post.replies as |reply|}}
       <div class="reply-border m-1 pl p-1">
-        {{reply.user.name}}
+        {{post.reply.user.name}}
         {{reply.message}}
       </div>
     {{/each}}                
