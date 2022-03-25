@@ -3,38 +3,36 @@
 <div class='posts-list'>
 
 {{#each posts as |post|}}
-  <div class='card-border mw mt-5 ml-10-lg ml-04 mb-4 project'>
-    <div class="flex p-05 justify-space-between">
-    <p class="fs-1">
-      {{post.user.name}}
-      
-    </p>
-    <p class="fs-075 text-gray-600">
-      {{post.category.name}}
-    </p>
+  <div class='card-border m-2 '>
+    <div class="flex p-05 justify-space-between cardHeader cardHeaderAnimation">
+      <div class="flex">
+      <img class="imgBord" style="width: 20px;" src="/images/profile icon.png" alt="">
+      <p class="fs-1 ml-1">
+        {{post.user.name}}
+      </p>
+      </div>
+      <p class="fs-075 text-gray-600">
+        {{post.category.name}}
+      </p>
     </div>
-    <p class="p-3 fs-15">
+    <p class="p-3 fs-15 postMessage">
       {{post.message}}
     </p>
 
-    <div class="flex pl-1">
-      <a class="td-n ml-1 mb-2" href='reply/{{post.id}}'><i class="far fa-comment"></i>Reply </a>
-    
-      <div class="pl-1">...</div>
-      <ul class="invisible">
+    <div class="flex justify-flex-end pl-1">
+      
+      <a class="repBtn repBtntag" href='reply/{{post.id}}'><i></i>Reply to post</a>
+      
+      <div class="pl-1"></div>
+      {{!-- <ul class="invisible">
         <a href="post/delete/{{post.id}}">delete</a>
-      </ul>
+      </ul> --}}
+      
+        <button class='delBtn'type='click'data-id='{{post.id}}'>Delete</button>
     </div>
-    <div class='col-md-4'>
-        <button
-          class='btn btn-sm btn-danger'
-          type='click'
-          data-id='{{post.id}}'
-        >DELETE</button>
-      </div>
     <div class="m-2 bt"></div>
     {{#each post.replies as |reply|}}
-      <div class="reply-border m-1 pl p-1">
+      <div class="reply-border m-1 pl p-1 repTextBox">
         {{reply.user.name}}
         {{reply.message}}
       </div>
