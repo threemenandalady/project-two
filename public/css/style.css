@@ -6,9 +6,56 @@ header, .project:not(:last-child) {
   border-bottom: 1px solid #ccc;
 }
 
-#p-op:hover {
+.headerTitle {
+  font-size: xx-large;
+  font-weight: 600;
+}
+
+.postBgc {
+  background-color: lightgray;
+  flex-grow: 1;
+}
+
+.repBtn {
+  background-color: #236192;
+  color: aliceblue;
+  padding: 0.35rem;
+  border: .5px black solid;
+  border-radius: 12px;
 
 }
+
+.repBtn:hover {
+  color: rgb(0, 229, 255);
+  transition: ease-in-out .4s;
+  border-radius: 0px;
+
+}
+
+.repBtntag:hover {
+  text-decoration: none;
+}
+
+.delBtn {
+  background-color: #6F263D;
+  color: white;
+  border: .5px black solid;
+  padding: 0.35rem;
+  border-radius: 12px;
+
+}
+
+.delBtn:hover {
+  color: rgb(255, 0, 0);
+  transition: ease-in-out .4s;
+  border-radius: 0px;
+
+}
+
+/* .delBtntag {
+  color: white;
+} */
+
 .no-button {
   background: none;
   border: none;
@@ -39,15 +86,55 @@ header, .project:not(:last-child) {
 }
 
 .card-border {
-  border: rgb(230, 230, 230) solid 0.01rem;
+  background-color: white;
   border-radius: 1rem;
-  box-shadow: rgb(0 0 0 / 10%) 0rem 0rem 1rem;
+  padding: 1rem;
+  border: rgba(173, 216, 230, 0) solid 0.01rem;
+  border-radius: 1rem;
+  box-shadow: rgb(106, 108, 109) 0.5rem 0.5rem 0.5rem 0.05rem;
+}
+
+.cardHeader {
+  border-radius: 9px 9px 0 0;
+    -webkit-animation: cardHeaderAnimation 7s infinite;
+    animation: cardHeaderAnimation 7s infinite;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+}
+
+@keyframes cardHeaderAnimation {
+  0% {
+    background-color: #feffcc;
+  }
+
+  25% {
+    background-color: #d9daa2;
+  }
+
+  50% {
+    background-color: #c2c46e;
+  }
+
+  75% {
+    background-color: #eef07f;
+  }
+
+  100% {
+      background-color: #feffcc;
+
+  }
 }
 
 .reply-border {
-  border: lightblue solid 0.01rem;
+  border: rgba(173, 216, 230, 0) solid 0.01rem;
   border-radius: 1rem;
-  box-shadow: lightblue 0.03rem 0.03rem 0.07rem 0.03rem
+  box-shadow: rgb(151, 212, 232) 0.5rem 0.5rem 0.5rem 0.05rem;
+}
+
+.postMessage {
+  background-color: rgb(242, 242, 242);
+  border-radius: 0 0 9px 9px;
+  margin-bottom: .5rem;
 }
 
 .p-05{
@@ -66,8 +153,16 @@ header, .project:not(:last-child) {
   font-size: .75rem;
 }
 
+.fxg-1 {
+  flex-grow: 1;
+}
+
 .h-05 {
  height: .05rem;
+}
+
+.h-100vh {
+  height: 100vh;
 }
 
 .mw {
@@ -102,4 +197,19 @@ header, .project:not(:last-child) {
   .ml-10-lg {
     margin-left: 10rem;
   }
+}
+
+@media (max-width: 1000px) {
+  .flex-stk-md {
+    flex-direction: column;
+  }
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+
+.imgBord {
+  border-radius: 20px;
 }
