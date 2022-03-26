@@ -22,7 +22,7 @@
             <button type="button" class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"><a href='/posts'>Create a post</a></button>
       
           <!-- Conditionally render login or logout links -->            |
-            <button class='no-button' id='logout'>logout</button>
+            <button type="button" class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" id='logout'>logout</button>
           {{else}}
           
             <button type="button" class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"><a href='/login'>login</a></button>
@@ -92,7 +92,9 @@
       <script src='/js/logout.js'></script>
     {{/if}}
 
-    
+    <footer class="text-center">
+      © 2022 Scott's Tots | David Blaine Elementary
+    </footer>
   
   </body>
 </html>
