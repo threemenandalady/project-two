@@ -29,11 +29,7 @@ WHEN I click a category to messages will be filtered to only show messages relat
 
 
 ## Screenshots
-
-
-
-
-
+![Scott's Tots](./public/images/Final%20Screenshot.png)
 
 
 ## Authors
