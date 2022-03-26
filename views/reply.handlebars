@@ -1,11 +1,15 @@
 <div class='row'>
   <div class='card-border ml-5 mt-2 col-md-6'>
-    <h2 class="pt-2 ta-c fs-15">{{post.message}}</h2>
+    <h2 class='pt-2 ta-c fs-15'>{{post.message}}</h2>
 
     <form class='form posts-message'>
       <div class='form-group'>
         <label for='message-post'>Reply:</label>
-        <input class='message-input' type='text' id='message-input' />
+        <input
+          class='message-input messageBox'
+          type='text'
+          id='message-input'
+        />
         <input type='hidden' id='post_id' value='{{post.id}}' />
       </div>
       <div class='form-group'>

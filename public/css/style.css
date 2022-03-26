@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-header, .project:not(:last-child) {
+header,
+.project:not(:last-child) {
   border-bottom: 1px solid #ccc;
 }
 
@@ -13,10 +14,11 @@ header, .project:not(:last-child) {
 .headerTitle {
   font-size: xx-large;
   font-weight: 600;
+  color: white;
 }
 
 .postBgc {
-  background-color: lightgray;
+  background-color: #a2aaad;
   flex-grow: 1;
 }
 
@@ -24,16 +26,14 @@ header, .project:not(:last-child) {
   background-color: #236192;
   color: aliceblue;
   padding: 0.35rem;
-  border: .5px black solid;
+  border: 0.5px black solid;
   border-radius: 12px;
-
 }
 
 .repBtn:hover {
   color: rgb(0, 229, 255);
-  transition: ease-in-out .4s;
+  transition: ease-in-out 0.4s;
   border-radius: 0px;
-
 }
 
 .repBtntag:hover {
@@ -41,19 +41,17 @@ header, .project:not(:last-child) {
 }
 
 .delBtn {
-  background-color: #6F263D;
+  background-color: #6f263d;
   color: white;
-  border: .5px black solid;
+  border: 0.5px black solid;
   padding: 0.35rem;
   border-radius: 12px;
-
 }
 
 .delBtn:hover {
   color: rgb(255, 0, 0);
-  transition: ease-in-out .4s;
+  transition: ease-in-out 0.4s;
   border-radius: 0px;
-
 }
 
 /* .delBtntag {
@@ -82,7 +80,7 @@ header, .project:not(:last-child) {
 }
 
 .bgc-color {
- background-color: turquoise;
+  background-color: #6f263d;
 }
 
 .whitespace-nowrap {
@@ -100,49 +98,48 @@ header, .project:not(:last-child) {
 
 .cardHeader {
   border-radius: 9px 9px 0 0;
-    -webkit-animation: cardHeaderAnimation 7s infinite;
-    animation: cardHeaderAnimation 7s infinite;
-    -webkit-animation-direction: normal;
-    animation-direction: normal;
+  -webkit-animation: cardHeaderAnimation 7s infinite;
+  animation: cardHeaderAnimation 7s infinite;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
 }
 
 @keyframes cardHeaderAnimation {
   0% {
-    background-color: #feffcc;
+    background-color: white;
   }
 
   25% {
-    background-color: #d9daa2;
+    background-color: gray;
   }
 
   50% {
-    background-color: #c2c46e;
+    background-color: #6f263d;
   }
 
   75% {
-    background-color: #eef07f;
+    background-color: #236192;
   }
 
   100% {
-      background-color: #feffcc;
-
+    background-color: #a2aaad;
   }
 }
 
 .reply-border {
   border: rgba(173, 216, 230, 0) solid 0.01rem;
   border-radius: 1rem;
-  box-shadow: rgb(151, 212, 232) 0.5rem 0.5rem 0.5rem 0.05rem;
+  box-shadow: #236192 0.5rem 0.5rem 0.5rem 0.05rem;
 }
 
 .postMessage {
   background-color: rgb(242, 242, 242);
   border-radius: 0 0 9px 9px;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
-.p-05{
-  padding: .5rem;
+.p-05 {
+  padding: 0.5rem;
 }
 
 .fs-1 {
@@ -158,7 +155,7 @@ header, .project:not(:last-child) {
 }
 
 .fs-075 {
-  font-size: .75rem;
+  font-size: 0.75rem;
 }
 
 .fxg-1 {
@@ -166,7 +163,7 @@ header, .project:not(:last-child) {
 }
 
 .h-05 {
- height: .05rem;
+  height: 0.05rem;
 }
 
 .h-100vh {
@@ -211,7 +208,7 @@ header, .project:not(:last-child) {
 
 .select {
   width: 12rem;
-  padding: .2rem;
+  padding: 0.2rem;
 }
 
 .jc-c {
@@ -232,8 +229,8 @@ header, .project:not(:last-child) {
 
 .messageBox {
   border: black solid 0.02rem;
-    width: 25rem;
-    height: 5rem;
+  width: 25rem;
+  height: 5rem;
 }
 
 .mt-02 {
@@ -241,7 +238,7 @@ header, .project:not(:last-child) {
 }
 
 .bg-img {
-  background-image: url("./../images/david_blaine_elementary.png");
+  background-image: url('./../images/david_blaine_elementary.png');
   height: 100%;
   margin: 0;
 }
@@ -251,18 +248,19 @@ header, .project:not(:last-child) {
 }
 
 .loginCard {
-  background-color: white;
-    border: lightgrey solid 0.01rem;
-    border-radius: 2rem;
-    padding: 2rem;
-    margin-left: auto;
-    margin-right: 4rem;
+  background-color: #a2aaad;
+  border: lightgrey solid 0.01rem;
+  border-radius: 2rem;
+  opacity: 93%;
+  padding: 2rem;
+  margin-left: auto;
+  margin-right: 4rem;
 }
 
 .loginBtn {
   width: 100%;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .form-inp {
@@ -282,7 +280,7 @@ header, .project:not(:last-child) {
 
 .form-gro {
   width: 100%;
-    margin: 0.625rem 0;
+  margin: 0.625rem 0;
 }
 
 .postCard {
@@ -307,7 +305,6 @@ header, .project:not(:last-child) {
 .flex-col {
   flex-direction: column;
 }
-
 
 .imgBord {
   border-radius: 20px;
